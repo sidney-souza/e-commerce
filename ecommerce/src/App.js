@@ -7,15 +7,18 @@ import styled from 'styled-components'
 const AppContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  padding: 16px;
+  gap: 8px;
 `
 
 function App() {
-  return
-  ;<div>
-    <Filters />
-    <Products />
-    <ShoppingCart />
-  </div>
+  return (
+    <AppContainer>
+      <Filters />
+      <Products />
+      <ShoppingCart />
+    </AppContainer>
+  )
 }
 
 export default App
